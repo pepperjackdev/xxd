@@ -49,7 +49,7 @@ void hexdump(config_t *config) {
     }
 
     size_t bytes_read;
-    for (long long index = 0; (bytes_read = fread(buffer, 1, config->buffer_size, config->input_stream)) > 0; index += bytes_read) {
+    for (int index = 0; (bytes_read = fread(buffer, 1, config->buffer_size, config->input_stream)) > 0; index += bytes_read) {
         // Printing the index
         fprintf(config->output_stream, "%08llx: ", index);
 
