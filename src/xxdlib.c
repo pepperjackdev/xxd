@@ -55,7 +55,7 @@ void hexdump(config_t *config) {
 
         // Printing the binary content in hex
         for (size_t i = 0; i < bytes_read; i++) {
-            fprintf(config->output_stream, "%02x", buffer[i]);
+            fprintf(config->output_stream, "%02x", (unsigned char)buffer[i]);
             if ((i + 1) % 2 == 0) fprintf(config->output_stream, " ");  // Add space every 2 bytes
         }
 
