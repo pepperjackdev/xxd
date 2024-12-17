@@ -3,7 +3,7 @@ A simple C implementation of the Unix command line utility `xxd` written in C.
 
 ## Building
 
-This project uses `CMake` as build script generator. To generate the build script of your favourite building system, just create `build` directory under the root folder of the project and move inside it. Once in the `build` dir, just run
+This project uses `CMake` as build script generator. To generate the build script of your favourite building system, just create a `build` directory under the root folder of the project and move inside it. Once in the `build` dir, just run
 
     cmake ..
 
