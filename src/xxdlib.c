@@ -19,6 +19,9 @@ config_t* default_config() {
 // FIXME: weak argument parsing system
 config_t* parse_args(int argc, char **argv) {
     config_t *config = default_config();
+    if (config == NULL) {
+        return NULL;
+    }
 
     for (int i = 1; i < argc; i++) {
         char *current = argv[i];
